@@ -1,0 +1,36 @@
+.TimeCard{
+    box-shadow: 15px 15px black;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.White{
+    background-color:#f1f0f0;
+    color: black;
+}
+
+.Yellow{
+    background-color: #FFD500;
+    color: black;
+}
+
+.Blue{
+    background-color: #0045AD;
+    color:white;
+}
+
+.Orange{
+    background-color: #FF5900;
+    color: black;
+}
+
+.Green {
+    background-color: #009B48;
+    color:white;
+}
+
+.Red {
+    background-color: #B90000;
+    color:white;
+}
