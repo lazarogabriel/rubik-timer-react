@@ -2,14 +2,13 @@
   "short_name": "Timer",
   "name": "Rubik Timer: Speed cubing timer",
   "description": "For speed cubers",
-  "start_url": "/index.html",
+  "start_url": "https://lazarogabriel.github.io/rubik-timer-react/build/index.html",
   "theme_color": "#1F334B",
   "background_color": "#1F334B",
   "display": "standalone",
-  "scope": "/",
   "icons": [
     {
-      "src": "/img/rubik-cube.png",
+      "src": "img/rubik-cube.png",
       "type": "image/png",
       "sizes": "16x16"
     }
