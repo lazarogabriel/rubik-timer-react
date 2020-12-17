@@ -2,6 +2,7 @@ import React from 'react';
 import Timer from '../Timer/Timer';
 import Slider from '../Slider/Slider';
 import { Themes, ThemesProvider } from '../../Contexts/ThemeContext';
+import { StatsProvider } from '../../Contexts/StatsContext';
 import './App.css';
 
 class App extends React.Component {
@@ -23,10 +24,12 @@ class App extends React.Component {
   render() {
     return (
       <ThemesProvider value={this.state}>
-        <div className={`App ${this.state.theme}`}>
-          <Timer />
-          <Slider/>
-        </div>
+        <StatsProvider>
+          <div className={`App ${this.state.theme}`}>
+            <Timer />
+            <Slider/>
+          </div>
+        </StatsProvider>
       </ThemesProvider>
     );
   }
