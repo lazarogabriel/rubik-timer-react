@@ -9,12 +9,12 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "/img/cube-16-16.png",
+      "src": "img/cube-16-16.png",
       "type": "image/png",
       "sizes": "16x16"
     },
     {
-      "src": "/img/cube-28-28.png",
+      "src": "img/cube-28-28.png",
       "type": "image/png",
       "sizes": "28x28"
     },
