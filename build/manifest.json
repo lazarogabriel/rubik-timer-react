@@ -2,7 +2,7 @@
   "short_name": "Rubik Timer",
   "name": "Rubik Timer: Speedcubing timer",
   "description": "For speedcubers",
-  "start_url": "index.html",
+  "start_url": "/rubik-timer-react/build/index.html",
   "scope": "/",
   "theme_color": "#1F334B",
   "background_color": "#1F334B",
