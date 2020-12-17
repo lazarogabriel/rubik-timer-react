@@ -44,10 +44,10 @@ class Timer extends React.Component {
             <Container fluid className="Timer h-100 flex-column align-items-center text-light">
                 <div className="text-center mt-5">
                     <a href="/#" className="btnShowLogIn text-warning">Login</a>
-                    <h1 className="text-center pb-5">
+                    <h1 className="font-weight-bold text-center pb-5">
                         Rubik Timer
                     </h1>
-                    <h2 className={timeStyle}>
+                    <h2 className={`${timeStyle} font-weight-bold`}>
                         {time}
                     </h2>
                 </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Timer from '../Timer/Timer';
 import Slider from '../Slider/Slider';
-import { Themes, ThemesProvider } from '../Context/ThemeContext';
+import { Themes, ThemesProvider } from '../../Contexts/ThemeContext';
 import './App.css';
 
 class App extends React.Component {

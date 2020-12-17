@@ -5,6 +5,20 @@
     border-radius: 25px;
 }
 
+.TimeCard span {
+    font-size: 1.9em;
+}
+  
+.TimeCard small{
+    font-size: 0.6em;
+}
+
+.btn {
+    border-radius: .844em;
+    font-size: 0.688rem;
+    border: 1.5px solid black;
+}
+
 .White{
     background-color:#f1f0f0;
     color: black;

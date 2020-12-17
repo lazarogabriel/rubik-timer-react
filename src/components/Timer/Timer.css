@@ -50,13 +50,13 @@
   
 .Start{
     color: white;
-    font-size: 3.2rem;
+    font-size: 4rem;
     transition: 1s;
 }
     
 .Stop{
     color: gray;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     transition: 1s;
 }
 

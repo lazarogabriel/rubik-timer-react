@@ -1,20 +1,24 @@
 import React from 'react';
+import { Col } from 'react-bootstrap';
+import './TimeCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default class TimeCard extends React.Component{
-    
-    render( {CardColor, Time, Date } ) {
-        return (
-        <div className={`${CardColor} TimeCard d-flex justify-content-between p-3`}>
+const TimeCard = ({CardColor, Time, Date }) => {
+    return (
+        <Col md={6} xl={4}>
+            <div className={`${CardColor} TimeCard d-flex p-3 justify-content-between`}>
                 <div>
-                    <span>{Time}</span><br/>
-                    <small className="pl-2">{Date}</small>
+                    <span>{Time}</span>
+                    <br/>
+                    <small>{Date}</small>
                 </div>
                 <div>
-                    <button className="font-weight-bold btn btn-success btn-sm">SAVE</button>
+                    <button className="font-weight-bold btn btn-success btn-sm mr-2">SAVE</button>
                     <button className="font-weight-bold btn btn-danger btn-sm ">X</button>
                 </div>
             </div>
-        );
-    } 
-}
+        </Col>
+    );
+} 
+
+export default TimeCard;

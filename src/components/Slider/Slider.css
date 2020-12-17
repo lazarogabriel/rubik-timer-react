@@ -7,8 +7,3 @@
     position: absolute;
     top: 94%;
 } 
-
-.Stats{
-    overflow-y: auto;
-    font-size:1.6em;
-}

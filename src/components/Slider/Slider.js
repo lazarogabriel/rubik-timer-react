@@ -11,7 +11,7 @@ export default class Slider extends React.Component{
             <div className="Slider d-flex flex-column text-dark">
                 <div className="align-self-center text-center">
                     <img src={AngleUpSolid} className="pt-1" width="25" alt='Arrow Up' />
-                    <h2>Tiempos</h2>
+                    <h2 className='font-weight-bold'>Tiempos</h2>
                 </div>
 
                 <Stats/>

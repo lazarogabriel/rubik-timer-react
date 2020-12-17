@@ -1,6 +1,6 @@
 import React from 'react';
 import FingerPrint from "./fingerprint-solid.svg";
-import { ThemesContext, Themes } from '../Context/ThemeContext';
+import { ThemesContext, Themes } from '../../Contexts/ThemeContext';
 
 class TimerTouchArea extends React.Component {
     static contextType = ThemesContext
