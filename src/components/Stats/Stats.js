@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import TimeCard from './TimeCard';
+import { TimeCard } from './TimeCard';
+import { StatsContext } from '../../Contexts/StatsContext';
+import RubikCubeGif from './solving-cube.gif';
 import './Stats.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Stats = () => {
+    const [timeCards] = useContext(StatsContext);
     return (
         <Container className="Stats mt-3">
             <Row className="mx-auto">
-                <TimeCard CardColor='Red' Time='21.331' Date={new Date().toDateString()}/>
-                <TimeCard CardColor='Yellow' Time='4.131' Date={new Date().toDateString()}/>
-                <TimeCard CardColor='Blue' Time='46.786' Date={new Date().toDateString()}/>
-                <TimeCard CardColor='Green' Time='15.541' Date={new Date().toDateString()}/>
-                <TimeCard CardColor='White' Time='10.181' Date={new Date().toDateString()}/>
-                <TimeCard CardColor='Orange' Time='19.181' Date={new Date().toDateString()}/>
+                {
+                    timeCards.length === 0 &&
+                    <div className="col text-center py-5 my-5">
+                        <img src={RubikCubeGif} alt='cube'/>
+                        <h5>Nada por aca, resolve tu cubo iniciando el timer...</h5>
+                    </div>
+                }
+
+                {timeCards.map(card => 
+                    <TimeCard key={card.Id} 
+                              Date={card.Date}
+                              Time={card.Time} 
+                              Color={card.Color} />
+                )}
             </Row>
         </Container>
     );  
