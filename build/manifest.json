@@ -1,16 +1,56 @@
 {
-  "short_name": "Timer",
-  "name": "Rubik Timer: Speed cubing timer",
-  "description": "For speed cubers",
-  "start_url": "https://lazarogabriel.github.io/rubik-timer-react/build/index.html",
+  "short_name": "Rubik Timer",
+  "name": "Rubik Timer: Speedcubing timer",
+  "description": "For speedcubers",
+  "start_url": "/index.html",
   "theme_color": "#1F334B",
   "background_color": "#1F334B",
   "display": "standalone",
   "icons": [
     {
-      "src": "img/rubik-cube.png",
+      "src": "/img/cube-16-16.png",
       "type": "image/png",
       "sizes": "16x16"
+    },
+    {
+      "src": "/img/cube-28-28.png",
+      "type": "image/png",
+      "sizes": "28x28"
+    },
+    {
+      "src": "img/cube-48-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "img/cube-128-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "img/cube-150-150.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    },
+    {
+      "src": "img/cube-256-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "img/cube-358-358.png",
+      "type": "image/png",
+      "sizes": "358x358"
+    },
+    {
+      "src": "img/cube-461-461.png",
+      "type": "image/png",
+      "sizes": "461x461"
+    },
+    {
+      "src": "img/cube-512-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ]
 }
