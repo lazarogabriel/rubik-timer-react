@@ -2,19 +2,18 @@
   "short_name": "Rubik Timer",
   "name": "Rubik Timer: Speedcubing timer",
   "description": "For speedcubers",
-  "start_url": "/rubik-timer-react/build/index.html",
-  "scope": "/",
+  "start_url": "/index.html",
   "theme_color": "#1F334B",
   "background_color": "#1F334B",
   "display": "standalone",
   "icons": [
     {
-      "src": "img/cube-16-16.png",
+      "src": "/img/cube-16-16.png",
       "type": "image/png",
       "sizes": "16x16"
     },
     {
-      "src": "img/cube-28-28.png",
+      "src": "/img/cube-28-28.png",
       "type": "image/png",
       "sizes": "28x28"
     },
