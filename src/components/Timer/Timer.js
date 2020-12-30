@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Timer = () => {
     
-    const [timeCards, setTimeCard] = useContext(StatsContext);
+    const { timeCards, addTimeCard } = useContext(StatsContext);
     const timer = useRef(null);
     const start = useRef(0);
     const [time, setTime] = useState(millisecondsToTime(0));
@@ -25,20 +25,13 @@ const Timer = () => {
     }
 
     const stopTimer = () => {
-        setTimeCard(prevTimeCards => {
-            const date = new Date().toDateString();
-            let color = null;
+        const date = new Date().toDateString();
 
-            if (prevTimeCards.length > 0) {
-                color = getNextCardColor(timeCards[timeCards.length - 1].Color);
-            }
-
-            return [...prevTimeCards, {
-                Id: `${time}-${date}`,
-                Time: time,
-                Date: date,
-                Color: color
-            }];
+        addTimeCard({
+            Id: `${time}-${date}`,
+            Time: time,
+            Date: date,
+            Color: timeCards.length > 0 ? getNextCardColor(timeCards[timeCards.length - 1].Color) : null
         });
 
         setTimeStyle("Stop");

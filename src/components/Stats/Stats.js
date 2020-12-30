@@ -7,7 +7,7 @@ import './Stats.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Stats = () => {
-    const [timeCards] = useContext(StatsContext);
+    const { timeCards, deleteTimeCard, saveTimeCard } = useContext(StatsContext);
     return (
         <Container className="Stats mt-3">
             <Row className="mx-auto">
@@ -23,7 +23,9 @@ const Stats = () => {
                     <TimeCard key={card.Id} 
                               Date={card.Date}
                               Time={card.Time} 
-                              Color={card.Color} />
+                              Color={card.Color}
+                              clickToDeleteCard={() => deleteTimeCard(card.Id)} 
+                              clickToSaveCard={() => saveTimeCard(card.Id)} />
                 )}
             </Row>
         </Container>

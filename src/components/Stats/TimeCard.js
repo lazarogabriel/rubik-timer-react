@@ -3,9 +3,9 @@ import { Col } from 'react-bootstrap';
 import './TimeCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const TimeCard = ({Color, Time, Date }) => {
+export const TimeCard = ({ Id, Color, Time, Date, clickToSaveCard, clickToDeleteCard }) => {
     return (
-        <Col md={6} xl={4}>
+        <Col key={Id} md={6} xl={4}>
             <div className={`${Color} TimeCard d-flex p-3 justify-content-between`}>
                 <div>
                     <span>{Time}</span>
@@ -13,8 +13,18 @@ export const TimeCard = ({Color, Time, Date }) => {
                     <small>{Date}</small>
                 </div>
                 <div>
-                    <button className="CustomButton btn-success btn-sm mr-1">SAVE</button>
-                    <button className="CustomButton btn-danger btn-sm">X</button>
+                    <button 
+                        className="CustomButton btn-success btn-sm mr-1" 
+                        onClick={clickToSaveCard}
+                    >
+                        SAVE
+                    </button>
+                    <button 
+                        className="CustomButton btn-danger btn-sm"
+                        onClick={clickToDeleteCard}
+                    >
+                        X
+                    </button>
                 </div>
             </div>
         </Col>
