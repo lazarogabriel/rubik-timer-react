@@ -1,0 +1,3 @@
+export const ADD_TIME_CARD = "ADD_TIME_CARD";
+export const DELETE_TIME_CARD = "DELETE_TIME_CARD";
+export const SAVE_TIME_CARD = "SAVE_TIME_CARD";
